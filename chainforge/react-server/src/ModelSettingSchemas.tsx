@@ -383,6 +383,7 @@ const ClaudeSettings: ModelSettingsDict = {
         description:
           "Select a version of Claude to query. For more details on the differences, see the Anthropic API documentation.",
         enum: [
+          "claude-3-5-sonnet-20240620",
           "claude-3-opus-20240229",
           "claude-3-sonnet-20240229",
           "claude-3-haiku-20240307",
@@ -404,8 +405,9 @@ const ClaudeSettings: ModelSettingsDict = {
           "claude-instant-v1.1-100k",
           "claude-instant-v1.0",
         ],
-        default: "claude-3-haiku-20240307",
+        default: "claude-3-5-sonnet-20240620",
         shortname_map: {
+          "claude-3-5-sonnet-20240620": "claude-3-5-sonnet",
           "claude-3-opus-20240229": "claude-3-opus",
           "claude-3-sonnet-20240229": "claude-3-sonnet",
           "claude-3-haiku-20240307": "claude-3-haiku",
